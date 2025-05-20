@@ -21,7 +21,7 @@ function App() {
     <div className="bg-gradient-to-br from-[#1a1832] via-[#232346] to-[#313150] min-h-screen text-white font-sans">
       <header className="flex justify-between items-center p-6 max-w-7xl mx-auto">
         <div className="flex items-center">
-          <span className="text-3xl font-extrabold tracking-tight text-[#7B3FE4]">Qlo</span>
+          <img src="/QLO.png" alt="Qlo logo" className="h-16 md:h-20 w-auto" />
         </div>
         <nav className="space-x-6">
           <a href="#features" className="hover:text-[#7B3FE4] transition">Features</a>
@@ -45,13 +45,14 @@ function App() {
             Get Started
           </a>
         </div>
-        <div className="flex-1 mt-10 md:mt-0 flex justify-center">
-          <img
-            src="https://placehold.co/320x240/7B3FE4/fff?text=Qlo"
-            alt="Barber queue illustration"
-            className="w-80 rounded-3xl shadow-2xl border-4 border-[#7B3FE4] bg-[#232346]"
-          />
-        </div>
+     <div className="flex-1 mt-10 md:mt-0 flex justify-center">
+  <img
+    src="/QLO.png"
+    alt="Qlo logo"
+    className="w-64 h-64 object-contain" // Adjust size as you wish
+    style={{ background: "white", borderRadius: "2rem", boxShadow: "0 4px 32px rgba(123,63,228,0.08)" }}
+  />
+</div>
       </section>
 
       <section id="features" className="bg-[#232346] py-16">
