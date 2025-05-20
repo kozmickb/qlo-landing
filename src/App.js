@@ -2,7 +2,7 @@ function App() {
   const features = [
     {
       title: "Real-Time Wait Times",
-      description: "Instantly view up-to-date wait times for all Mitchell’s Barber Shop locations.",
+      description: "Instantly view up-to-date wait times for your local Barber or Nail Shop locations.",
       icon: "⏱️",
     },
     {
@@ -12,7 +12,7 @@ function App() {
     },
     {
       title: "Multiple Locations",
-      description: "See live data and info for Brentwood, Chelmsford, and Hornchurch shops.",
+      description: "See live data and info for multiple shop locations.",
       icon: "📍",
     },
   ];
@@ -36,7 +36,7 @@ function App() {
             Smarter Walk-In<br className="hidden md:block" /> Queue Management
           </h1>
           <p className="text-xl md:text-2xl mb-8 text-gray-300 max-w-xl">
-            Qlo makes walk-in visits effortless. Check wait times, compare locations, and plan your next barber trip with confidence.
+            Qlo makes walk-in visits effortless. Check wait times, compare locations, and plan your next  trip with confidence.
           </p>
           <a
             href="#login"
@@ -47,7 +47,7 @@ function App() {
         </div>
         <div className="flex-1 mt-10 md:mt-0 flex justify-center">
           <img
-            src="https://placehold.co/320x240/7B3FE4/fff?text=Barber+Hero"
+            src="https://placehold.co/320x240/7B3FE4/fff?text=Qlo"
             alt="Barber queue illustration"
             className="w-80 rounded-3xl shadow-2xl border-4 border-[#7B3FE4] bg-[#232346]"
           />
