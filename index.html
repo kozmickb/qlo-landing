@@ -11,6 +11,13 @@
       body {
         font-family: 'Plus Jakarta Sans', sans-serif;
       }
+      @keyframes fade-in {
+        from { opacity: 0; transform: translateY(20px); }
+        to { opacity: 1; transform: translateY(0); }
+      }
+      .animate-fade-in {
+        animation: fade-in 1s ease-out forwards;
+      }
     </style>
   </head>
   <body class="bg-zinc-950 text-zinc-100">
@@ -23,16 +30,13 @@
 
       <!-- Hero Section -->
       <section class="flex flex-col items-center text-center px-6 py-24 max-w-4xl mx-auto">
-        <h1 class="text-5xl md:text-7xl font-extrabold tracking-tight bg-clip-text text-transparent bg-gradient-to-r from-[#FF3F8D] via-[#D764D4] to-[#AD5CFF]">
+        <h1 class="text-5xl md:text-7xl font-extrabold tracking-tight bg-clip-text text-transparent bg-gradient-to-r from-[#FF3F8D] via-[#D764D4] to-[#AD5CFF] animate-fade-in" style="transform: translateY(0); transition: transform 1.2s ease-out;">
           Optimise Footfall. Predict Demand. Delight Customers.
         </h1>
-        <p class="mt-6 text-lg text-zinc-400 max-w-xl leading-relaxed">
+        <p class="mt-6 text-lg text-zinc-400 max-w-xl leading-relaxed animate-fade-in" style="transition: opacity 1.2s ease-out 0.2s;">
           Qlo helps walk-in businesses manage queues, improve service, and grow revenue with real-time insights and predictive traffic tools.
         </p>
         <div class="mt-8 flex flex-wrap justify-center gap-4">
-          <a href="https://qlo.replit.app" target="_blank" class="bg-gradient-to-r from-[#FF3F8D] via-[#D764D4] to-[#AD5CFF] text-white px-6 py-3 rounded-full font-semibold text-sm shadow-lg hover:scale-105 transition">
-            Try Live Demo
-          </a>
           <a href="#features" class="border border-zinc-700 text-zinc-100 px-6 py-3 rounded-full font-semibold text-sm hover:border-zinc-500 transition">
             See Features
           </a>
