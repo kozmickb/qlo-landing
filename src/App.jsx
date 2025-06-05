@@ -4,12 +4,13 @@ import Footer from './components/Footer'
 
 function App() {
   return (
-    <main className="bg-zinc-950 text-zinc-100">
-      <Hero />
-      <Features />
+    <div className="bg-zinc-950 text-white overflow-x-hidden">
+      <div className="space-y-32 scroll-smooth">
+        <Hero />
+        <Features />
+      </div>
       <Footer />
-    </main>
+    </div>
   )
 }
-
 export default App

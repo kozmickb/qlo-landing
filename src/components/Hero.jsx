@@ -1,11 +1,14 @@
 function Hero() {
   return (
-    <header className="px-6 py-16 text-center border-b border-zinc-800 relative">
-      <a href="https://web.qlo.app" target="_blank" className="absolute top-4 right-4 bg-gradient-to-r from-pink-500 via-fuchsia-500 to-violet-500 text-white px-5 py-2 rounded-full text-sm font-semibold shadow hover:opacity-90 transition">
-        Launch App
-      </a>
-      <h1 className="text-5xl font-extrabold bg-gradient-to-r from-pink-500 via-fuchsia-500 to-violet-500 bg-clip-text text-transparent mb-4">
-        The Future of Walk-in Traffic is Predictable
+    <header className="px-6 py-20 text-center border-b border-zinc-800 relative bg-[url('/assets/bg-pattern.svg')] bg-cover bg-center">
+      <div className="flex justify-between items-center max-w-7xl mx-auto mb-12">
+        <img src="/QLO logo.png" alt="Qlo Logo" className="h-16 w-auto" />
+        <a href="https://web.qlo.app" target="_blank" className="bg-gradient-to-r from-pink-500 via-fuchsia-500 to-violet-500 text-white px-5 py-2 rounded-full text-sm font-semibold shadow hover:opacity-90 transition">
+          Launch App
+        </a>
+      </div>
+      <h1 className="text-6xl font-extrabold bg-gradient-to-r from-pink-500 via-fuchsia-500 to-violet-500 bg-clip-text text-transparent mb-4">
+        Optimise Footfall. Predict Demand. Delight Customers.
       </h1>
       <p className="text-zinc-400 max-w-2xl mx-auto mb-6">
         Every minute your customers wait, you lose revenue. Qlo gives you the tools to take control — in real time.
