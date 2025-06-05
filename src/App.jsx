@@ -1,11 +1,6 @@
-
 import React from 'react';
-import Hero from './components/Hero';
+import Layout from './components/Layout';
 
 export default function App() {
-  return (
-    <main>
-      <Hero />
-    </main>
-  );
+  return <Layout />;
 }
