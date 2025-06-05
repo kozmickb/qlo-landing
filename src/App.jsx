@@ -1,7 +1,11 @@
-import Layout from './components/Layout';
 
-function App() {
-  return <Layout />;
+import React from 'react';
+import Hero from './components/Hero';
+
+export default function App() {
+  return (
+    <main>
+      <Hero />
+    </main>
+  );
 }
-
-export default App;
