@@ -1,12 +1,15 @@
 import React from 'react';
+import { FaInstagram } from 'react-icons/fa'; // Import Instagram icon
 
 export default function EarlyAccess() {
   return (
     <section id="early-access" className="bg-zinc-950 py-20 px-6 text-center">
       <div className="max-w-xl mx-auto">
         <h2 className="text-3xl font-bold text-white mb-4">Get Early Access</h2>
-        <p className="text-zinc-400 mb-8">Be among the first to experience Qlo. Enter your email and we'll be in touch.</p>
-        
+        <p className="text-zinc-400 mb-8">
+          Be among the first to experience Qlo. Enter your email and we'll be in touch.
+        </p>
+
         <form
           name="early-access"
           method="POST"
@@ -29,13 +32,14 @@ export default function EarlyAccess() {
           </button>
         </form>
 
-        {/* Instagram DM button */}
+        {/* Instagram DM Button with icon */}
         <a
           href="https://www.instagram.com/direct/t/qlo.app/"
           target="_blank"
           rel="noopener noreferrer"
-          className="mt-6 inline-block bg-gradient-to-r from-[#FF3F8D] via-[#D764D4] to-[#AD5CFF] text-white px-6 py-3 rounded-full font-semibold shadow hover:opacity-90 transition"
+          className="mt-6 inline-flex items-center gap-2 justify-center bg-gradient-to-r from-[#FF3F8D] via-[#D764D4] to-[#AD5CFF] text-white px-6 py-3 rounded-full font-semibold shadow hover:opacity-90 transition"
         >
+          <FaInstagram className="text-xl" />
           Message Us on Instagram
         </a>
       </div>
