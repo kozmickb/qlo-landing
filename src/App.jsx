@@ -1,12 +1,14 @@
 import React from 'react';
-import BusinessJourney from './components/BusinessJourney';
-import CustomerJourney from './components/CustomerJourney';
+import Hero from './components/Hero';
+import Features from './components/Features';
+import Footer from './components/Footer';
 
 export default function App() {
   return (
-    <div>
-      <BusinessJourney />
-      <CustomerJourney />
+    <div className="bg-zinc-950 text-zinc-100">
+      <Hero />
+      <Features />
+      <Footer />
     </div>
   );
 }
