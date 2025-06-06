@@ -1,6 +1,12 @@
 import React from 'react';
-import Layout from './components/Layout';
+import BusinessJourney from './components/BusinessJourney';
+import CustomerJourney from './components/CustomerJourney';
 
 export default function App() {
-  return <Layout />;
+  return (
+    <div>
+      <BusinessJourney />
+      <CustomerJourney />
+    </div>
+  );
 }
