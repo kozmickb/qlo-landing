@@ -1,5 +1,5 @@
-import StickyHeader from './StickyHeader';
 import React from 'react';
+import Header from './Header';
 import Hero from './Hero';
 import BusinessJourney from './BusinessJourney';
 import CustomerJourney from './CustomerJourney';
@@ -10,7 +10,7 @@ import ScrollToTop from './ScrollToTop';
 export default function Layout() {
   return (
     <>
-      <StickyHeader />
+      <Header />
       <Hero />
       <BusinessJourney />
       <CustomerJourney />
