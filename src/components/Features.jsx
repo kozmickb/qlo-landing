@@ -55,7 +55,15 @@ export default function Features() {
   return (
     <section id="features" className="bg-zinc-900 py-20 px-6">
       <div className="max-w-6xl mx-auto">
-        <h2 className="text-3xl font-bold text-white mb-12 text-center">For Customers</h2>
+        <motion.div
+          className="mb-12"
+          initial={{ opacity: 0, y: 40 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6 }}
+          viewport={{ once: true }}
+        >
+          <h2 className="text-3xl font-bold text-white text-center">For Customers</h2>
+        </motion.div>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
           {customerFeatures.map((feature, idx) => (
             <motion.div
@@ -66,14 +74,29 @@ export default function Features() {
               transition={{ duration: 0.5, delay: idx * 0.1 }}
               viewport={{ once: true }}
             >
-              <img src={feature.image} alt={feature.title} className="rounded-lg mb-4 shadow-md" loading="lazy" />
+              <motion.img
+                src={feature.image}
+                alt={feature.title}
+                className="rounded-lg mb-4 shadow-md"
+                loading="lazy"
+                whileHover={{ scale: 1.05 }}
+                transition={{ duration: 0.3 }}
+              />
               <h3 className="text-xl font-semibold mb-1 text-white">{feature.title}</h3>
               <p className="text-zinc-400">{feature.description}</p>
             </motion.div>
           ))}
         </div>
 
-        <h2 className="text-3xl font-bold text-white mt-24 mb-12 text-center">For Business Owners</h2>
+        <motion.div
+          className="mt-24 mb-12"
+          initial={{ opacity: 0, y: 40 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6 }}
+          viewport={{ once: true }}
+        >
+          <h2 className="text-3xl font-bold text-white text-center">For Business Owners</h2>
+        </motion.div>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
           {managerFeatures.map((feature, idx) => (
             <motion.div
@@ -84,7 +107,14 @@ export default function Features() {
               transition={{ duration: 0.5, delay: idx * 0.1 }}
               viewport={{ once: true }}
             >
-              <img src={feature.image} alt={feature.title} className="rounded-lg mb-4 shadow-md" loading="lazy" />
+              <motion.img
+                src={feature.image}
+                alt={feature.title}
+                className="rounded-lg mb-4 shadow-md"
+                loading="lazy"
+                whileHover={{ scale: 1.05 }}
+                transition={{ duration: 0.3 }}
+              />
               <h3 className="text-xl font-semibold mb-1 text-white">{feature.title}</h3>
               <p className="text-zinc-400">{feature.description}</p>
             </motion.div>
