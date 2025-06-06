@@ -5,6 +5,7 @@ import BusinessJourney from './BusinessJourney';
 import CustomerJourney from './CustomerJourney';
 import DemoCTA from './DemoCTA';
 import Footer from './Footer';
+import ScrollToTop from './ScrollToTop';
 
 export default function Layout() {
   return (
@@ -15,6 +16,7 @@ export default function Layout() {
       <CustomerJourney />
       <DemoCTA />
       <Footer />
+      <ScrollToTop />
     </>
   );
 }
