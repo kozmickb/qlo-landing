@@ -5,6 +5,7 @@ import BusinessJourney from './BusinessJourney';
 import CustomerJourney from './CustomerJourney';
 import Testimonials from './Testimonials';
 import DemoCTA from './DemoCTA';
+import EarlyAccess from './EarlyAccess';
 import Footer from './Footer';
 import ScrollToTop from './ScrollToTop';
 import SmoothScroll from './SmoothScroll';
@@ -18,6 +19,7 @@ export default function Layout() {
       <CustomerJourney />
       <Testimonials />
       <DemoCTA />
+      <EarlyAccess />
       <Footer />
       <ScrollToTop />
       <SmoothScroll />
