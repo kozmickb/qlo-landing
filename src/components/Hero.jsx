@@ -12,7 +12,7 @@ export default function Hero() {
       <motion.img
         src="/QLO-logo.png"
         alt="Qlo Logo"
-        className="h-42 mx-auto mb-6"
+        className="h-40 mx-auto mb-6"
         initial={{ opacity: 0, scale: 0.9 }}
         animate={{ opacity: 1, scale: 1 }}
         transition={{ delay: 0.3, duration: 1 }}
