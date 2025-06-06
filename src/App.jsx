@@ -1,17 +1,8 @@
-
 import React from 'react';
-import Hero from './components/Hero';
-import Features from './components/Features';
-import CTA from './components/CTA';
-import Footer from './components/Footer';
+import Layout from './components/Layout';
 
-export default function App() {
-  return (
-    <>
-      <Hero />
-      <Features />
-      <CTA />
-      <Footer />
-    </>
-  );
+function App() {
+  return <Layout />;
 }
+
+export default App;
