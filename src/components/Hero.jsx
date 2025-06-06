@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { motion } from 'framer-motion';
 
@@ -7,7 +8,7 @@ export default function Hero() {
       initial={{ opacity: 0, y: 40 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 1 }}
-      className="text-center px-6 py-24 max-w-5xl mx-auto relative overflow-hidden"
+      className="text-center px-6 py-24 max-w-5xl mx-auto relative"
     >
       <motion.img
         src="/QLO-logo.png"
