@@ -8,6 +8,14 @@
   </head>
   <body>
     <div id="root"></div>
+
+    <!-- ✅ Netlify hidden fallback form -->
+    <form name="early-access" data-netlify="true" hidden>
+      <input type="text" name="name" />
+      <input type="email" name="email" />
+      <input type="hidden" name="form-name" value="early-access" />
+    </form>
+
     <script type="module" src="/src/main.jsx"></script>
   </body>
 </html>
