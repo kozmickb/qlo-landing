@@ -1,3 +1,4 @@
+import StickyHeader from './StickyHeader';
 import React from 'react';
 import Hero from './Hero';
 import BusinessJourney from './BusinessJourney';
@@ -8,6 +9,7 @@ import Footer from './Footer';
 export default function Layout() {
   return (
     <>
+      <StickyHeader />
       <Hero />
       <BusinessJourney />
       <CustomerJourney />
