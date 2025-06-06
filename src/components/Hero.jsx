@@ -10,7 +10,7 @@ export default function Hero() {
       className="text-center px-6 py-24 max-w-5xl mx-auto relative overflow-hidden"
     >
       <motion.img
-        src="/QLO logo.png"
+        src="/QLO-logo.png"
         alt="Qlo Logo"
         className="h-20 mx-auto mb-6"
         initial={{ opacity: 0, scale: 0.9 }}
