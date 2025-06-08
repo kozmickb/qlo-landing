@@ -37,12 +37,12 @@ export default function Hero() {
       </motion.p>
 
       <motion.div
-        className="mt-10 flex justify-center gap-4"
+        className="mt-10 flex flex-wrap justify-center gap-4"
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ delay: 0.8, duration: 1 }}
       >
-        {/* CTA 1: Features */}
+        {/* CTA 1: See Features */}
         <motion.a
           href="#features"
           whileHover={{ scale: 1.05 }}
@@ -62,6 +62,36 @@ export default function Hero() {
           className="bg-gradient-to-r from-[#FF3F8D] via-[#D764D4] to-[#AD5CFF] text-white px-6 py-3 rounded-md font-semibold shadow-md transition-all"
         >
           Launch App
+        </motion.a>
+
+        {/* CTA 3: Notify Me */}
+        <motion.a
+          href="#early-access"
+          whileHover={{ scale: 1.05 }}
+          whileTap={{ scale: 0.98 }}
+          className="bg-zinc-700 text-white px-6 py-3 rounded-md font-medium shadow-md hover:bg-zinc-600 transition"
+        >
+          Notify Me
+        </motion.a>
+
+        {/* CTA 4: Instagram DM */}
+        <motion.a
+          href="https://www.instagram.com/direct/t/yourusername/"
+          target="_blank"
+          rel="noopener noreferrer"
+          whileHover={{ scale: 1.05 }}
+          whileTap={{ scale: 0.98 }}
+          className="flex items-center gap-2 bg-pink-600 text-white px-6 py-3 rounded-md font-semibold shadow-md hover:bg-pink-500 transition"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            className="w-5 h-5"
+            fill="currentColor"
+            viewBox="0 0 24 24"
+          >
+            <path d="M7.75 2h8.5A5.75 5.75 0 0122 7.75v8.5A5.75 5.75 0 0116.25 22h-8.5A5.75 5.75 0 012 16.25v-8.5A5.75 5.75 0 017.75 2zm0 1.5A4.25 4.25 0 003.5 7.75v8.5A4.25 4.25 0 007.75 20.5h8.5a4.25 4.25 0 004.25-4.25v-8.5A4.25 4.25 0 0016.25 3.5h-8.5zM12 7a5 5 0 110 10 5 5 0 010-10zm0 1.5a3.5 3.5 0 100 7 3.5 3.5 0 000-7zm4.75-.5a.75.75 0 110 1.5.75.75 0 010-1.5z" />
+          </svg>
+          Message Us
         </motion.a>
       </motion.div>
     </motion.section>
