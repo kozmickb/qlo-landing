@@ -42,7 +42,7 @@ export default function Hero() {
         transition={{ delay: 0.8, duration: 1 }}
       >
         {[
-          { label: 'See Features', href: '#features' },
+          { label: 'See Features', href: '#business' },
           { label: 'Launch App', href: 'https://web.qlo.app', external: true },
           { label: 'Notify Me', href: '#early-access' },
         ].map((cta, i) => (
