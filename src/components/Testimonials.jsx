@@ -1,54 +1,52 @@
-import { motion } from 'framer-motion';
+import { useEffect, useState } from 'react';
+import { motion, AnimatePresence } from 'framer-motion';
 
 const testimonials = [
   {
-    quote: "Qlo helped us reduce wait times and keep customers happy.",
-    name: "The Barber’s Chair",
-    type: "Barbershop"
+    name: 'Daniel – Barber Shop Owner, London',
+    quote: 'Qlo doubled our walk-ins within a month. The wait-time transparency gave customers the confidence to come in.',
   },
   {
-    quote: "We now serve 20% more clients with the same staff thanks to Qlo.",
-    name: "Gloss & Go",
-    type: "Nail Salon"
+    name: 'Claire – Nail Salon Manager, Birmingham',
+    quote: 'We used to guess our busiest times. Now we optimise staff around real data. Qlo’s a game changer.',
   },
   {
-    quote: "Real-time predictions mean we’re never caught short-staffed.",
-    name: "Beauty Haven",
-    type: "Beauty Salon"
+    name: 'Mo – MOT Centre Operator, Manchester',
+    quote: 'No more queues out the door. People arrive steadily thanks to traffic predictions.',
   },
   {
-    quote: "Customers love knowing how long they’ll wait before arriving.",
-    name: "The Deli Drop",
-    type: "Deli Counter"
-  },
-  {
-    quote: "Qlo helped us better manage the busy MOT rush hours.",
-    name: "QuickFix MOT",
-    type: "MOT Centre"
+    name: 'Sarah – Beauty Therapist, Liverpool',
+    quote: 'It’s sleek, simple, and my clients love the real-time queue visibility.',
   }
 ];
 
 export default function Testimonials() {
+  const [index, setIndex] = useState(0);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setIndex((index + 1) % testimonials.length);
+    }, 5000);
+    return () => clearInterval(interval);
+  }, [index]);
+
   return (
-    <section id="testimonials" className="bg-zinc-900 py-20 px-6">
-      <div className="max-w-5xl mx-auto text-center">
-        <h2 className="text-3xl font-bold text-white mb-12">What Businesses Are Saying</h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-          {testimonials.map((item, idx) => (
-            <motion.div
-              key={idx}
-              className="bg-zinc-800 p-6 rounded-xl shadow-md"
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5, delay: idx * 0.1 }}
-              viewport={{ once: true }}
-            >
-              <p className="text-zinc-300 text-lg italic mb-4">“{item.quote}”</p>
-              <p className="text-white font-semibold">{item.name}</p>
-              <p className="text-zinc-400 text-sm">{item.type}</p>
-            </motion.div>
-          ))}
-        </div>
+    <section id="testimonials" className="bg-zinc-800 text-white py-20 px-6">
+      <div className="max-w-3xl mx-auto text-center">
+        <h2 className="text-3xl font-bold mb-12">What Businesses Say</h2>
+        <AnimatePresence mode="wait">
+          <motion.div
+            key={index}
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            exit={{ opacity: 0, y: -20 }}
+            transition={{ duration: 0.6 }}
+            className="bg-zinc-900 p-8 rounded-xl shadow-lg"
+          >
+            <p className="text-xl mb-4 italic">“{testimonials[index].quote}”</p>
+            <p className="text-zinc-400 text-sm">{testimonials[index].name}</p>
+          </motion.div>
+        </AnimatePresence>
       </div>
     </section>
   );
