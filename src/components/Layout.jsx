@@ -3,6 +3,7 @@ import React from 'react';
 import Hero from './Hero';
 import BusinessJourney from './BusinessJourney';
 import CustomerJourney from './CustomerJourney';
+import StickyCTA from './StickyCTA';
 import Testimonials from './Testimonials';
 import DemoCTA from './DemoCTA';
 import EarlyAccess from './EarlyAccess';
@@ -17,6 +18,7 @@ export default function Layout() {
       <Hero />
       <BusinessJourney />
       <CustomerJourney />
+      <StickyCTA />
       <Testimonials />
       <DemoCTA />
       <EarlyAccess />
