@@ -13,7 +13,7 @@ export default function StickyFooter() {
           <a href="https://web.qlo.app" target="_blank" className="text-sm font-medium text-white hover:text-purple-300 transition">Launch App</a>
           <a href="#early-access" className="text-sm font-medium text-white hover:text-purple-300 transition">Notify Me</a>
           <a
-            href="https://www.instagram.com/direct/t/yourusername/"
+            href="https://www.instagram.com/direct/t/qlo.app/"
             target="_blank"
             rel="noopener noreferrer"
             className="text-sm font-medium text-white flex items-center gap-1 hover:text-purple-300 transition"
