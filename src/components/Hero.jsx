@@ -76,7 +76,7 @@ export default function Hero() {
 
         {/* CTA 4: Instagram DM */}
         <motion.a
-          href="https://www.instagram.com/direct/t/yourusername/"
+          href="https://www.instagram.com/direct/t/qlo.app/"
           target="_blank"
           rel="noopener noreferrer"
           whileHover={{ scale: 1.05 }}
