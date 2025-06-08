@@ -1,53 +1,61 @@
-import { useEffect, useState } from 'react';
-import { motion, AnimatePresence } from 'framer-motion';
+import { motion } from 'framer-motion';
 
 const testimonials = [
   {
-    name: 'Daniel – Barber Shop Owner, London',
-    quote: 'Qlo doubled our walk-ins within a month. The wait-time transparency gave customers the confidence to come in.',
+    quote: "We've seen a 30% increase in walk-ins thanks to Qlo’s predictive traffic data.",
+    name: "Lisa",
+    business: "Barber Lounge, Manchester"
   },
   {
-    name: 'Claire – Nail Salon Manager, Birmingham',
-    quote: 'We used to guess our busiest times. Now we optimise staff around real data. Qlo’s a game changer.',
+    quote: "Qlo helped us reduce queue times and manage our schedule more efficiently.",
+    name: "Adeel",
+    business: "Beauty Studio, Birmingham"
   },
   {
-    name: 'Mo – MOT Centre Operator, Manchester',
-    quote: 'No more queues out the door. People arrive steadily thanks to traffic predictions.',
+    quote: "Our MOT garage now runs smoother during busy times — it’s transformed how we work.",
+    name: "Sarah",
+    business: "DriveSafe MOT, Liverpool"
   },
   {
-    name: 'Sarah – Beauty Therapist, Liverpool',
-    quote: 'It’s sleek, simple, and my clients love the real-time queue visibility.',
+    quote: "The daily insights are a game changer — especially for staff planning.",
+    name: "Tasha",
+    business: "Nail Lab, Leeds"
+  },
+  {
+    quote: "We’ve grown repeat customers just by managing our busiest hours better.",
+    name: "Jay",
+    business: "Urban Deli, London"
   }
 ];
 
 export default function Testimonials() {
-  const [index, setIndex] = useState(0);
-
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setIndex((index + 1) % testimonials.length);
-    }, 5000);
-    return () => clearInterval(interval);
-  }, [index]);
-
   return (
-    <section id="testimonials" className="bg-zinc-800 text-white py-20 px-6">
-      <div className="max-w-3xl mx-auto text-center">
-        <h2 className="text-3xl font-bold mb-12">What Businesses Say</h2>
-        <AnimatePresence mode="wait">
-          <motion.div
-            key={index}
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            exit={{ opacity: 0, y: -20 }}
-            transition={{ duration: 0.6 }}
-            className="bg-zinc-900 p-8 rounded-xl shadow-lg"
-          >
-            <p className="text-xl mb-4 italic">“{testimonials[index].quote}”</p>
-            <p className="text-zinc-400 text-sm">{testimonials[index].name}</p>
-          </motion.div>
-        </AnimatePresence>
+    <section id="testimonials" className="bg-zinc-950 px-6 py-20 overflow-hidden">
+      <div className="max-w-5xl mx-auto text-center mb-12">
+        <h2 className="text-3xl font-bold text-white">Trusted by High Street Businesses</h2>
+        <p className="text-zinc-400 mt-2">Barbers, nail salons, MOTs, and more are using Qlo to optimise footfall.</p>
       </div>
+      <motion.div
+        className="flex gap-6 animate-slide"
+        initial={{ x: '0%' }}
+        animate={{ x: '-100%' }}
+        transition={{
+          repeat: Infinity,
+          duration: 30,
+          ease: 'linear'
+        }}
+      >
+        {[...testimonials, ...testimonials].map((t, idx) => (
+          <div
+            key={idx}
+            className="min-w-[300px] max-w-xs bg-zinc-900 p-6 rounded-xl shadow-lg flex-shrink-0"
+          >
+            <p className="text-zinc-300 text-sm italic mb-4">“{t.quote}”</p>
+            <p className="text-sm font-semibold text-white">{t.name}</p>
+            <p className="text-xs text-zinc-500">{t.business}</p>
+          </div>
+        ))}
+      </motion.div>
     </section>
   );
 }
