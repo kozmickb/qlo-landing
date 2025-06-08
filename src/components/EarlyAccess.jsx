@@ -33,15 +33,7 @@ export default function EarlyAccess() {
         </form>
 
         {/* Instagram DM Button with icon */}
-        <a
-          href="https://www.instagram.com/direct/t/qlo.app/"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="mt-6 inline-flex items-center gap-2 justify-center bg-gradient-to-r from-[#FF3F8D] via-[#D764D4] to-[#AD5CFF] text-white px-6 py-3 rounded-full font-semibold shadow hover:opacity-90 transition"
-        >
-          <FaInstagram className="text-xl" />
-          Message Us on Instagram
-        </a>
+    
       </div>
     </section>
   );
