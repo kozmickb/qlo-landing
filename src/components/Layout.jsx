@@ -10,7 +10,7 @@ import EarlyAccess from './EarlyAccess';
 import Footer from './Footer';
 import ScrollToTop from './ScrollToTop';
 import SmoothScroll from './SmoothScroll';
-import StickyFooter from './StickyFooter';
+
 
 export default function Layout() {
   return (
@@ -26,7 +26,7 @@ export default function Layout() {
       <Footer />
       <ScrollToTop />
       <SmoothScroll />
-      <StickyFooter />
+    
     </>
   );
 }
