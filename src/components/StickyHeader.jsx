@@ -20,7 +20,7 @@ export default function StickyHeader() {
 
         {/* Instagram Icon */}
         <a
-          href="https://www.instagram.com/direct/t/yourusername/"
+          href="https://www.instagram.com/direct/t/qlo.app/"
           target="_blank"
           rel="noopener noreferrer"
           className="text-pink-500 hover:text-white text-xl"
