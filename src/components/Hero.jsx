@@ -58,7 +58,7 @@ export default function Hero() {
         ))}
 
         <a
-          href="https://www.instagram.com/direct/t/yourusername/"
+          href="https://www.instagram.com/direct/t/qlo.app/"
           target="_blank"
           rel="noopener noreferrer"
           className="flex items-center gap-2 bg-gradient-to-r from-[#FF3F8D] via-[#D764D4] to-[#AD5CFF] px-4 py-2 rounded-md font-semibold hover:opacity-90 transition whitespace-nowrap"
