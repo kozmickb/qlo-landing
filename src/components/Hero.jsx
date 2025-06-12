@@ -34,37 +34,20 @@ export default function Hero() {
       >
         Qlo helps walk-in businesses manage queues, improve service, and grow revenue with real-time insights and predictive traffic tools.
       </motion.p>
-
       <motion.div
-        className="mt-10 flex flex-wrap justify-center items-center gap-3 sm:gap-4 text-white text-sm sm:text-base"
+        className="mt-8 flex flex-wrap justify-center gap-4"
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ delay: 0.8, duration: 1 }}
       >
-        {[
-          { label: 'See Features', href: '#business' },
-          { label: 'Launch App', href: 'https://web.qlo.app', external: true },
-          { label: 'Notify Me', href: '#early-access' },
-        ].map((cta, i) => (
-          <a
-            key={cta.label}
-            href={cta.href}
-            target={cta.external ? '_blank' : undefined}
-            rel={cta.external ? 'noopener noreferrer' : undefined}
-            className="bg-gradient-to-r from-[#FF3F8D] via-[#D764D4] to-[#AD5CFF] px-4 py-2 rounded-md font-semibold hover:opacity-90 transition whitespace-nowrap"
-          >
-            {cta.label}
-          </a>
-        ))}
-
-        <a
-          href="https://www.instagram.com/direct/t/qlo.app/"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="flex items-center gap-2 bg-gradient-to-r from-[#FF3F8D] via-[#D764D4] to-[#AD5CFF] px-4 py-2 rounded-md font-semibold hover:opacity-90 transition whitespace-nowrap"
-        >
-          <FaInstagram className="w-4 h-4" />
-          Instagram
+        <a href="#features" className="bg-gradient-to-r from-[#FF3F8D] via-[#D764D4] to-[#AD5CFF] text-white px-6 py-3 rounded-full font-semibold shadow hover:opacity-90 transition">
+          See Features
+        </a>
+        <a href="https://web.qlo.app" target="_blank" className="border border-purple-500 text-purple-300 px-6 py-3 rounded-full font-semibold hover:bg-purple-900 hover:text-white transition">
+          Launch App
+        </a>
+        <a href="#early-access" className="bg-gradient-to-r from-[#FF3F8D] via-[#D764D4] to-[#AD5CFF] text-white px-6 py-3 rounded-full font-semibold shadow hover:opacity-90 transition">
+          Notify Me
         </a>
       </motion.div>
     </motion.section>
